@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kritunga Restaurant Feedback Prediction</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;1,100&display=swap" rel="stylesheet">
+<style>
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 60vh;
+    width: 100%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.title{
+    width: 90%; 
+    position: absolute;
+    top: 55%;
+    left:22%;
+    transform:translate(-20%,-20%);
+    text-align: center;
+    font-style: normal;
+    font-size: 250%;
+}
+
+.title p{
+    font-family:'Times New Roman', Times, serif;
+}
+.srch{
+    width: 50%;
+    font-size: 40%;
+}
+.btn{
+    width:6%;
+    font-size:40%;
+    background:orange;
+    border: 2px solid orange;
+    cursor: pointer;
+    
+}
+.icon ion-icon{
+    color: black;
+}
+
+    </style>
+</head>
+<body>
+    <section class="header">
+        <div class="title">
+            <h1 style="color:white;">KRITUNGA RESTAURANT</h1>
+            <p style="color:white;">Enjoy the experience of delicious food and tasty of heaven<br>Give us your valuable feedback</p>
+            <form action="/submit" method="post">
+                <input class ='srch' type="Text" id = Feedback name="Feedback" placeholder="Give your Feedback" required="required">
+                <br>
+                <input class = 'btn' type="submit" value="submit">
+            </form>
+            <br>
+            <br>
+            {{ result }}
+            <br>
+            <br>
+            <div class="icon">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+            </div>
+       </div>
+       <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
+
+
+
+
